@@ -1,0 +1,30 @@
+[
+    {
+        "name": "keyboard",
+        "number": 20
+    },
+    {
+        "name": "ram",
+        "number": 74
+    },
+    {
+        "name": "cpu",
+        "number": 100
+    },
+    {
+        "name": "monitor",
+        "number": 50
+    },
+    {
+        "name": "mouse",
+        "number": 95
+    },
+    {
+        "name": "cpu i3",
+        "number": 80
+    },
+    {
+        "name": "cpu i5",
+        "number": 10
+    }
+]
