@@ -23,18 +23,21 @@ const CircleProgress = () => {
     }, []);
 
     return (
-        <div className="container-progress" ref={refProgress} style={{ marginTop: '1000px' }}>
-            {fakeData.map((item, index) => (
-                <div key={index}>
-                    <AnimateProgressBar values={[0, item]}>
-                        {(percentage) => {
-                            return <CircularProgressbar value={posScroll >= posProgress ? percentage.number : ''} text={posScroll >= posProgress ? percentage.number + '%' : ''} />;
-                        }}
-                    </AnimateProgressBar>
-                    <span>{item.name}</span>
-                </div>
-            ))}
-        </div>
+        <>
+            <h1>Scroll Down :)</h1>
+            <div className="container-progress" ref={refProgress} style={{ marginTop: '100vh' }}>
+                {fakeData.map((item, index) => (
+                    <div key={index} className="itemProgress">
+                        <AnimateProgressBar values={[0, item]}>
+                            {(percentage) => {
+                                return <CircularProgressbar value={posScroll >= posProgress ? percentage.number : ''} text={posScroll >= posProgress ? percentage.number + '%' : ''} />;
+                            }}
+                        </AnimateProgressBar>
+                        <span>{item.name}</span>
+                    </div>
+                ))}
+            </div>
+        </>
     );
 };
 
